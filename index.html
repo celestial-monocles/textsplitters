@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Tools</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #262626;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+        .container {
+            background-color: #333333;
+            width: 90%; /* Default width */
+            max-width: 400px; /* Limit width on larger screens */
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+			margin-bottom: -100px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid #575757;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 10px 0 20px;
+        }
+        a {
+            display: block;
+            margin: 12px 0;
+            padding: 15px;
+            background-color: #444444;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        a:hover {
+            background-color: #575757;
+            transform: scale(1.05);
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+        /* Adjustments for mobile view */
+        @media (max-width: 600px) {
+            .container {
+                width: 80%; /* Adjust container width for smaller screens */
+                padding: 15px; /* Slightly smaller padding for a better fit */
+            }
+            .profile-img {
+                width: 100px;
+                height: 100px; /* Adjust profile image size */
+            }
+            a {
+                font-size: 16px; /* Slightly smaller font for links */
+                padding: 12px; /* Adjust padding for links */
+            }
+        }
+	
+	.hidden {
+	  text-decoration: none;
+	  background-color: transparent;
+	  font-size: 14px;
+	  transform: none;
+	  color: gray;
+	  margin-bottom:-30px;
+	  padding-bottom: 30px;
+	  padding-top: 3px;
+	  cursor: text;
+	}
+	.hidden:hover {
+	  transform: none;
+	  background-color: transparent;
+	  font-weight: normal;
+
+	}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile image at the top -->
+        <img src="images/foolsymbol.jpg" alt="Profile Image" class="profile-img">
+
+        <header>
+            <h1>❖ Reading Tools ❖</h1>
+        </header>
+
+        <a href="https://celestial-monocles.github.io/textsplitter/">Text Splitter</a>
+		<a href="https://celestial-monocles.github.io/textsplitterdl/">Download</a>
+        <a href="https://celestial-monocles.github.io/textsplittercc/">Character Count</a>
+		<a href="https://celestial-monocles.github.io/textsplittercc2/">Character Count 2</a>
+		<a href="https://celestial-monocles.github.io/textsplitterdd/">Dropdown</a>
+        <!-- Add more links as needed -->
+
+        <footer>
+            <a class="hidden" href="https://celestial-monocles.github.io/">Powered by Mysteries</a>
+        </footer>
+    </div>
+</body>
+</html>
